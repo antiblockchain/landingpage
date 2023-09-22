@@ -6,11 +6,13 @@ import { BlogCard } from "./components/Card";
 import { BlogPost } from "./components/BlogPost";
 import Axios from "axios";
 
+const SERVER_URL = "http://localhost:2999";
+
 export function Blog () {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        Axios.get("http://127.0.0.1:3000/blog").then(res => {
+        Axios.get(SERVER_URL + "/blog").then(res => {
             setBlogs(res.data);
         })
     }, []);

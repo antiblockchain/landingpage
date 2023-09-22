@@ -17,7 +17,7 @@ export function Home () {
   exit={{x: window.innerWidth, transition: { duration: 0.2 } }} className="wrapper">
         <Container className="header-container snap-point">
       <Title>welcome.</Title>
-        <Subtitle>i make stuff. look below to see stuff i made.</Subtitle>
+        <Subtitle>i'm a fullstack dev.</Subtitle>
 
         
         </Container>
@@ -44,7 +44,7 @@ export function Home () {
         <section>
         <Container className="about-me snap-point">
           <NormalTitle>about me</NormalTitle>
-          <Text>i like to make stuff and problem-solve. i try to learn new things as they come out and experiment with whatever the newest trends are.</Text>
+          <Text>i like to make stuff and problem-solve. i also do music on the side.</Text>
           <div className="icon-container">
             
           <i className="devicon-javascript-plain colored"></i>
@@ -76,9 +76,9 @@ export function Home () {
           
           
           </div>
-          <Text>these are some of the things i am familiar with or proficient in.</Text>
-          <Text>when i'm not programming, i'm usually playing guitar, piano, or doing photography.</Text>
-          <Button as="a" href="/blog" $primary>blog for my projects</Button>
+          <Text>these are some of the tech i'm familiar with. check out my projects to see more.</Text>
+          <Text>if i remember to post, you can learn more about my projects and myself in my blog.</Text>
+          <Button as="a" href="/blog" $primary>blog</Button>
         </Container>
         </section>
         
