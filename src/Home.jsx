@@ -76,7 +76,7 @@ export function Home () {
           
           
           </div>
-          <Text>these are some of the tech i'm familiar with. check out my projects to see more.</Text>
+          <Text>above is some of the tech i'm familiar with. check out my projects to see more.</Text>
           <Text>if i remember to post, you can learn more about my projects and myself in my blog.</Text>
           <Button as="a" href="/blog" $primary>blog</Button>
         </Container>
