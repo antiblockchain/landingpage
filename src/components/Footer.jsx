@@ -9,7 +9,7 @@ export function Footer() {
             <div className="footer-container">
                 <div className="footer-text">
                     <Subtitle as="a" href="">contact me.</Subtitle>
-                <Text>created with React, Vite, Framer.js, and Styled Components</Text>
+                <Text>powered by react, framer.js, and nodejs/express for my blog</Text>
                 <Text>copyright 2023, all rights reserved.</Text>
                 </div>
             </div>
