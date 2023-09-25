@@ -13,7 +13,7 @@ export function Blog () {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        Axios.get(SERVER_URL + "/blog", {withCredentials: true}).then(res => {
+        Axios.get(SERVER_URL + "/blog", { credentials: 'include' }).then(res => {
             setBlogs(res.data);
         })
     }, []);
@@ -31,7 +31,7 @@ export function Blog () {
         <ul>
             
     {blogs.map((blog) => {
-        return <li><Link to={"/blog/" + blog._id}>{blog.title}</Link></li>
+        return <li key={blog._id}><Link to={"/blog/" + blog._id}>{blog.title}</Link></li>
     })}
     
     </ul>

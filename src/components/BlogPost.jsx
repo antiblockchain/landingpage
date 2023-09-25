@@ -11,9 +11,8 @@ export function BlogPost() {
     const { id } = useParams();
 
     useEffect(() => {
-        Axios.get(SERVER_URL + "/blog/" + id, {withCredentials: true}).then(res => {
+        Axios.get(SERVER_URL + "/blog/" + id, { credentials: 'include' }).then(res => {
             setBlog(res.data);
-            console.log(res.data)
         });
     }, []);
 
