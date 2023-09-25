@@ -6,7 +6,7 @@ import { BlogCard } from "./components/Card";
 import { BlogPost } from "./components/BlogPost";
 import Axios from "axios";
 
-const SERVER_URL = "https://elynch.co:2999";
+const SERVER_URL = "https://api.elynch.co";
 
 export function Blog () {
     const [blogs, setBlogs] = useState([]);
