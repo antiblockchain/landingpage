@@ -12,7 +12,7 @@ export function Blog () {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        Axios.get(SERVER_URL + "/blog").then(res => {
+        Axios.get(SERVER_URL + "/blog", {withCredentials: true}).then(res => {
             setBlogs(res.data);
         })
     }, []);
