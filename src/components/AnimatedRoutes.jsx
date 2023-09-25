@@ -4,6 +4,7 @@ import { Home } from "../Home";
 import { Blog } from "../Blog";
 import {AnimatePresence} from 'framer-motion';
 import { PortfolioSite } from "../posts/Portfolio-Site";
+import { BlogPost } from "./BlogPost";
 
 
 export function AnimatedRoutes() {
@@ -15,6 +16,7 @@ export function AnimatedRoutes() {
         <Route path="/" element= {<Home />} />
 
         <Route path="/blog" element= {<Blog />} />
+        <Route path="/blog/:id" element= {<BlogPost />} />
         <Route path="/blog/portfolio-site" element= {<PortfolioSite />} />
     </Routes>
     </AnimatePresence>

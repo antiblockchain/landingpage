@@ -234,3 +234,27 @@ i {
 .inverted {
     filter:invert(100);
 }
+
+.blog-posts-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    background-color: #0505a2;
+    padding: 1rem;
+
+    
+}
+.blog-posts-container ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+.blog-posts-container li {
+    padding: 1rem;
+    transition: .3s;
+}
+.blog-posts-container li:hover {
+    transform: scale(115%);
+}

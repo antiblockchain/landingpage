@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 import { BlogCard } from "./components/Card";
 import { BlogPost } from "./components/BlogPost";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 
-const SERVER_URL = "https://api.elynch.co";
+export const SERVER_URL = "https://api.elynch.co";
 
 export function Blog () {
     const [blogs, setBlogs] = useState([]);
@@ -16,7 +17,6 @@ export function Blog () {
             setBlogs(res.data);
         })
     }, []);
-    console.log(blogs);
 
     return (
     <motion.div
@@ -28,11 +28,16 @@ export function Blog () {
         <Subtitle>A look at the process of some of the projects I've done.</Subtitle>
     </Container>
     <Container className="blog-posts-container">
+        <ul>
+            
     {blogs.map((blog) => {
-        return <BlogPost key={blog._id} title={blog.title} content={blog.description}></BlogPost>
+        return <li><Link to={"/blog/" + blog._id}>{blog.title}</Link></li>
     })}
+    
+    </ul>
     
     </Container>
     </ motion.div>
     )
 }
+//<BlogPost key={blog._id} title={blog.title} content={blog.description}></BlogPost>
