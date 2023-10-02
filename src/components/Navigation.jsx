@@ -18,6 +18,10 @@ export function Navigation () {
                         <Link to="/blog" className="link">Blog</Link>
                         
                     </li>
+                    <li>
+                        <Link to="/contact" className="link">Contact</Link>
+                        
+                    </li>
                 </ul>
             </div>
             

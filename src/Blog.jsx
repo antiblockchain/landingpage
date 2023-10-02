@@ -24,8 +24,8 @@ export function Blog () {
   animate={{width: "100%"}}
   exit={{opacity: 0, transition: { duration: 0.2 } }}>
     <Container className="blog-container">
-        <Title>Blog</Title>
-        <Subtitle>A look at the process of some of the projects I've done.</Subtitle>
+        <Title>blog.</Title>
+        <Subtitle>a look at the process of some of the projects I've done.</Subtitle>
     </Container>
     <Container className="blog-posts-container">
         <ul>
