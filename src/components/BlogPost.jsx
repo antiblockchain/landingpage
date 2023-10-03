@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useParams } from "react-router-dom";
 import Axios from "axios";
 import { SERVER_URL } from "../Blog";
+import ReactMarkdown from 'react-markdown'
 
 export function BlogPost() {
     const [blog, setBlog] = useState();
@@ -24,7 +25,7 @@ export function BlogPost() {
   exit={{opacity: 0, transition: { duration: 0.2 } }}>
         <div className="blogpost-container">
             <div className="title-card"><BlogTitle>{blog?.title}</BlogTitle></div>
-            <div className="content-card"><Text>{blog?.description}</Text></div>
+            <div className="content-card"><ReactMarkdown>{blog?.description}</ReactMarkdown></div>
 
         </div>
         </motion.div>
