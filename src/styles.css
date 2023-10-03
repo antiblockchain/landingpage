@@ -115,6 +115,7 @@ nav {
 
     flex-wrap: wrap;
     padding: 1rem;
+
     /* background-color: #212124;
     -webkit-box-shadow:0px 0px 93px 0px rgba(38,38,38,1);
     -moz-box-shadow: 0px 0px 93px 0px rgba(38,38,38,1);
@@ -136,14 +137,21 @@ nav {
 
 }
 
+.card-img {
+    display: inline-block;
+    border: 3px solid white;
+}
+
 .card img {
-    max-width: 20rem;
+    display: block;
+    max-width: 100%;
     height: auto;
     object-fit: scale-down;
     transition: .3s;
     filter: brightness(95%);
 
-    padding-top: 3rem;
+
+
 
 
 
@@ -300,4 +308,26 @@ i {
     justify-content: left;
     align-items: center;
     gap: 1rem;
+}
+
+@media (max-width: 814px) {
+    .blog-posts-container ul {
+
+        text-align: center;
+        transition: .3s;
+    }
+}
+
+.blog-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
+    font-size: 1rem;
+    padding: none;
+    color: #ffffff;
+    opacity: 87%;
+    max-width: 100%;
+    overflow-x: hidden;
+    white-space: break-spaces;
+    word-wrap: break-word;
+
 }

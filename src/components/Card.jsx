@@ -6,7 +6,10 @@ import { Link } from "react-router-dom"
 export function Card({image, title, description, url, github}) {
     return (
         <div className="card">
-            <img src={image}></img>
+            <div className="card-img">
+                
+            <img src={image} alt={title}></img>
+            </div>
             <div className="card-info">
                 <Subtitle>{title}</Subtitle>
                 <Text>{description}</Text>

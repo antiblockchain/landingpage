@@ -36,7 +36,7 @@ export function Home () {
         <Card image="./img/web.jpg" title="example three" description="Interesting description giving lots of info" url="url"></Card>
 
           
-          <Card image="./img/web.jpg" title="Blog API" description="Basic RESTful API for managing my portfolio blog." url="blog" github="https://github.com/unexpectedlyalarming/home-blog-api"></Card>
+          <Card image="./img/blogapi.jpg" title="Blog API" description="Basic RESTful API for managing my portfolio blog." url="blog" github="https://github.com/unexpectedlyalarming/home-blog-api"></Card>
 
         </Container>
         
