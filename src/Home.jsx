@@ -27,16 +27,20 @@ export function Home () {
         </section>
         <Container  className="project-container snap-point">
         <NormalTitle >projects</NormalTitle>
-        
-        <Card image="./img/socialmediaclone.jpg" title="Social media clone" description="A social media CRUD site loosely based on facebook built with the MERN stack." url="https://media.elynch.co" github="https://github.com/unexpectedlyalarming/social-media-clone"></Card>
+        <Card image="./img/ratemycat.jpg" title="Rate My Cat" description="A site to post and rate pictures of cats, and create your own profile. Be competitive with the daily leaderboards!" url="https://cats.elynch.co" github="https://github.com/unexpectedlyalarming/rate-my-cat"></Card>
 
-        
-        <Card image="./img/web.jpg" title="example two" description="Interesting description giving lots of info" url="url"></Card>
+        <Card image="./img/melodiverse.png" title="Melodiverse" description="A site to share samples and interact with others. Fullstack application built with the MERN stack." url="https://melodiverse.elynch.co" github="https://github.com/unexpectedlyalarming/melodiverse/"></Card>
 
-        <Card image="./img/web.jpg" title="example three" description="Interesting description giving lots of info" url="url"></Card>
+        <Card image="./img/opentab.png" title="OpenTab" description="OpenTab is an open source alternative to paid guitar editors. Not only is it userfriendly, but it also exports to markdown format for ease of use." url="https://unexpectedlyalarming.github.io/opentab/" github="https://github.com/unexpectedlyalarming/opentab/"></Card>
+        
+        <Card image="./img/musicidea.jpg" title="Music idea generator" description="Minimal website that generates ideas for creating a song" url="https://unexpectedlyalarming.github.io/music-idea-generator/" github="https://github.com/unexpectedlyalarming/music-idea-generator"></Card>
+
+        <Card image="./img/weather.jpg" title="Weather App" description="A react app that fetches data from the weather service, then finds a background from unsplash API" url="http://weather.elynch.co" github="https://github.com/unexpectedlyalarming/weather-react/"></Card>
+        
+
 
           
-          <Card image="./img/blogapi.jpg" title="Blog API" description="Basic RESTful API for managing my portfolio blog." url="blog" github="https://github.com/unexpectedlyalarming/home-blog-api"></Card>
+          <Card image="./img/blogapi.jpg" title="Blog API" description="Authenticated RESTful API for managing my portfolio blog." url="blog" github="https://github.com/unexpectedlyalarming/home-blog-api"></Card>
 
         </Container>
         

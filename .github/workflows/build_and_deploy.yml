@@ -1,0 +1,30 @@
+name: "Update Local Repo, build vite, and push to production"
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  update_local_repo:
+    runs-on: ubuntu-23.04
+
+    steps:
+      - name: Run git pull for production
+        run: |
+          cd /home/ubuntu/landingpage
+          git pull origin production
+      
+
+      - name: Build vite
+        run: |
+          cd /home/ubuntu/landingpage
+          rm -rf dist
+          npm run build
+          rm -rf /var/www/html/*
+          mv dist /var/www/html
+
+      - name: Restart nginx
+        run: |
+          sudo systemctl restart nginx
+      

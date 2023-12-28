@@ -7,7 +7,7 @@ import { BlogPost } from "./components/BlogPost";
 import Axios from "axios";
 import { Link } from "react-router-dom";
 
-export const SERVER_URL = "https://api.elynch.co";
+export const SERVER_URL = "https://api.blog.elynch.co";
 
 export function Blog () {
     const [blogs, setBlogs] = useState([]);
