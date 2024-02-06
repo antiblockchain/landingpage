@@ -38,15 +38,17 @@ html {
 .link {
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0);
-    border: solid 3px #ffffff;
+    text-transform: uppercase;
+    /* border: solid 3px #ffffff;
 
-    border-image: linear-gradient(#ffffff, #c5c5c5) 20;
+    border-image: linear-gradient(#ffffff, #c5c5c5) 20; */
     padding: .5rem;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 900;
     text-decoration: none;
     color: #ffffff;
+    
 
 }
 
@@ -94,7 +96,7 @@ nav {
     margin-top: -1rem;
     position: sticky;
     top: 0rem;
-    background-color: #161618;
+    /* background-color: #161618; */
     padding-bottom: 1rem;
     z-index: 2;
 }
@@ -171,9 +173,15 @@ nav {
     left: 0;
     right: 0;
     height: 10px;
-    background: red;
+    background: white;
     transform-origin: 0%;
     z-index: 3;
+
+
+    -webkit-box-shadow:0px 0px 93px 1px rgba(255,255,255,0.3);
+    -moz-box-shadow: 0px 0px 93px 1px rgba(255,255,255,0.3);
+    box-shadow: 0px 0px 93px 1px rgba(255,255,255,0.3);
+    
 }
 
 /* blog */
@@ -248,6 +256,7 @@ section {
 
 footer {
     scroll-snap-align: start;
+    padding-top: 2rem;
 }
 
 .card {

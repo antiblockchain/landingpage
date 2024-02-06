@@ -21,22 +21,23 @@ export const Title = styled.h1`
     font-weight: 900;
     font-size: 5rem;
     
-    background-image: linear-gradient(
-    -225deg,
-    #ececec 0%,
-    #00c6d8 29%,
-    #ff0055 67%,
-    #ff9100 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
+  //   background-image: linear-gradient(
+  //   -225deg,
+  //   #ececec 0%,
+  //   #00c6d8 29%,
+  //   #ff0055 67%,
+  //   #ff9100 100%
+  // );
+
+  // background-size: auto auto;
+  // background-clip: border-box;
+  // background-size: 200% auto;
   color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 8s linear infinite;
-  overflow: hidden;
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // animation: textclip 8s linear infinite;
+  // overflow: hidden;
   
 
 

@@ -16,8 +16,8 @@ export function Home () {
   animate={{opacity: 1}}
   exit={{x: window.innerWidth, transition: { duration: 0.2 } }} className="wrapper">
         <Container className="header-container snap-point">
-      <Title>welcome.</Title>
-        <Subtitle>i'm a fullstack dev.</Subtitle>
+      <Title>Hi!</Title>
+        <Subtitle>let's get right into my projects.</Subtitle>
 
         
         </Container>
@@ -27,20 +27,25 @@ export function Home () {
         </section>
         <Container  className="project-container snap-point">
         <NormalTitle >projects</NormalTitle>
-        <Card image="./img/ratemycat.jpg" title="Rate My Cat" description="A site to post and rate pictures of cats, and create your own profile. Be competitive with the daily leaderboards!" url="https://cats.elynch.co" github="https://github.com/unexpectedlyalarming/rate-my-cat"></Card>
+        <Card image="./img/ratemycat.jpg" title="Rate My Cat" 
+        description="Tech: MERN stack. A fully authenticated RESTful social media site for cats, designed after Reddit and with features from various sites." url="https://cats.elynch.co" github="https://github.com/unexpectedlyalarming/rate-my-cat"></Card>
 
-        <Card image="./img/melodiverse.png" title="Melodiverse" description="A site to share samples and interact with others. Fullstack application built with the MERN stack." url="https://melodiverse.elynch.co" github="https://github.com/unexpectedlyalarming/melodiverse/"></Card>
+        <Card image="./img/melodiverse.png" title="Melodiverse" 
+        description="Tech: MERN stack. A site to share audio samples and collaborate with others. Utilizes audio streaming and blobs, as well as custom React Hooks. " url="https://melodiverse.elynch.co" github="https://github.com/unexpectedlyalarming/melodiverse/"></Card>
 
-        <Card image="./img/opentab.png" title="OpenTab" description="OpenTab is an open source alternative to paid guitar editors. Not only is it userfriendly, but it also exports to markdown format for ease of use." url="https://unexpectedlyalarming.github.io/opentab/" github="https://github.com/unexpectedlyalarming/opentab/"></Card>
+        <Card image="./img/opentab.png" title="OpenTab" 
+        description="Tech: React. OpenTab is an open source alternative to paid guitar editors. Not only is it user-friendly, but it also exports to markdown format for ease of use." url="https://unexpectedlyalarming.github.io/opentab/" github="https://github.com/unexpectedlyalarming/opentab/"></Card>
         
-        <Card image="./img/musicidea.jpg" title="Music idea generator" description="Minimal website that generates ideas for creating a song" url="https://unexpectedlyalarming.github.io/music-idea-generator/" github="https://github.com/unexpectedlyalarming/music-idea-generator"></Card>
+        <Card image="./img/musicidea.jpg" title="Music idea generator" 
+        description="Tech: Javascript. Minimal website that generates ideas for creating a song" url="https://unexpectedlyalarming.github.io/music-idea-generator/" github="https://github.com/unexpectedlyalarming/music-idea-generator"></Card>
 
-        <Card image="./img/weather.jpg" title="Weather App" description="A react app that fetches data from the weather service, then finds a background from unsplash API" url="http://weather.elynch.co" github="https://github.com/unexpectedlyalarming/weather-react/"></Card>
+        <Card image="./img/weather.jpg" title="Weather App" 
+        description="Tech: React. A react app that fetches data from a weather API, then finds a background from unsplash API" url="http://weather.elynch.co" github="https://github.com/unexpectedlyalarming/weather-react/"></Card>
         
 
 
           
-          <Card image="./img/blogapi.jpg" title="Blog API" description="Authenticated RESTful API for managing my portfolio blog." url="blog" github="https://github.com/unexpectedlyalarming/home-blog-api"></Card>
+          <Card image="./img/blogapi.jpg" title="Blog API" description="Tech: Node, Express, MongoDB. Authenticated RESTful API for managing my portfolio blog." url="blog" github="https://github.com/unexpectedlyalarming/home-blog-api"></Card>
 
         </Container>
         
@@ -48,15 +53,11 @@ export function Home () {
         <section>
         <Container className="about-me snap-point">
           <NormalTitle>about me</NormalTitle>
-          <Text>from a young age i have had an interest in computers. i never learned to program as a kid, but as i got older i wanted to learn how to make things that i see online. i also do music on the side.</Text>
+          <Text>i'm a self taught developer with an interest in all things computers, unix, and music.</Text>
           <div className="icon-container">
             
           <i className="devicon-javascript-plain colored"></i>
           <i className="devicon-react-original colored"></i>
-
-          <i className="devicon-python-plain colored"></i>
-
-          
           
           <i className="devicon-git-plain colored"></i>
 
@@ -64,6 +65,7 @@ export function Home () {
           
           
           <i className="devicon-bash-plain inverted"></i>
+          
           
           
           
@@ -79,8 +81,8 @@ export function Home () {
           
           
           </div>
-          <Text>above is some of the tech and libraries i've used with projects. check out my projects to see more. i'm knowlegeable with the MERN stack as well as linux and networking.</Text>
-          <Text>if i remember to post, you can learn more about my projects and myself in my blog.</Text>
+          <Text>i'm knowlegeable with the MERN stack as well as linux and networking. i also have some newer projects with postgresql.</Text>
+          <Text>if i remember to post, you can learn more about my larger projects and myself in my blog.</Text>
           <Button as="a" href="/blog" $primary>blog</Button>
         </Container>
         </section>
