@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   "server.hmr.overlay": false,
   "scripts": {
-    "build": "sudo vite build --base=/var/www/html/"
+    "build": "sudo vite build"
   },
 
 })
