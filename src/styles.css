@@ -37,7 +37,7 @@ html {
 
 .link {
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: black;
     text-transform: uppercase;
     /* border: solid 3px #ffffff;
 
@@ -97,6 +97,7 @@ nav {
     position: sticky;
     top: 0rem;
     /* background-color: #161618; */
+    background-color: black;
     padding-bottom: 1rem;
     z-index: 2;
 }
