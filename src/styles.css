@@ -12,6 +12,8 @@ html {
 
 
     width: 100%;
+    x-overflow: hidden;
+
 
 }
 
@@ -258,6 +260,7 @@ section {
 footer {
     scroll-snap-align: start;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .card {
@@ -267,6 +270,9 @@ footer {
 a {
 
     background: transparent;
+
+    color: white;
+    font-weight: 700;
 
 }
 
@@ -282,7 +288,7 @@ i {
     text-decoration: none;
     color: white;
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
     background-color: #0505a2;
     padding: 1rem;
 
@@ -292,7 +298,10 @@ i {
 .blog-posts-container ul {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -309,10 +318,15 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
 }
-
+.email-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .card-info .box {
     display: flex;
     justify-content: left;

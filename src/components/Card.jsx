@@ -14,7 +14,11 @@ export function Card({image, title, description, url, github}) {
                 <Subtitle>{title}</Subtitle>
                 <Text>{description}</Text>
                 <div className="box">
-                <Button as="a" href={url} target="_blank" rel="noopener noreferrer" $primary >live demo</Button>
+                    {
+                        url ? 
+                        <Button as="a" href={url} target="_blank" rel="noopener noreferrer" $primary >live demo</Button>
+                    : null }
+                        
                 <Button as="a" href={github} target="_blank" rel="noopener noreferrer" $secondary>github</Button>
                 </div>
             </div>

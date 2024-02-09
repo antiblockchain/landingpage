@@ -32,10 +32,12 @@ export default function Contact () {
             <div className="contact-list">
             <Button as="a" href="https://github.com/unexpectedlyalarming" $primary>my github</Button>
 
-            <Button as="a" onClick={handleDownload} $primary>my resume</Button>
+            <Button as="a"  href="#" aria-label="download resume" onClick={handleDownload} $primary>my resume</Button>
             <div>
-            <Button as="a" href="mailto: eli.lynch1912@gmail.com" $primary>email me</Button>
-            <Text>eli.lynch1912@gmail.com</Text>
+                <div className="email-me">
+
+            <Button as="a" href="mailto: eli.lynch1912@gmail.com" $primary alt="eli.lynch1912@gmail.com">email me</Button>
+            </div>
             </div>
             </div>
         </div>
