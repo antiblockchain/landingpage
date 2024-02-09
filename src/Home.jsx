@@ -1,6 +1,7 @@
 import React from "react";
 import { Line } from "./components/Line.style";
 import { Button } from "./components/Button.style";
+import { Link } from 'react-router-dom'
 import { NormalTitle, Subtitle, Text, Title } from "./components/Text.style";
 import { Container } from "./components/Container.style";
 import { Card } from "./components/Card";
@@ -59,8 +60,7 @@ export function Home () {
           <i className="devicon-bash-plain inverted"></i>
           </div>
           <Text>I'm a self taught developer passionate about all things computers, unix, and music. I mostly specialize with the MERN stack as well as linux and networking. My current projects have been focused more on postgresql.</Text>
-          <Text>When I remember to post, you can learn more about my larger projects and myself in my blog.</Text>
-          <Button as="a" href="/blog" $primary>blog</Button>
+          <Text>When I remember to post, you can learn more about my larger projects and myself in my <Link to="/blog">blog.</Link></Text>
         </Container>
         </section>
         
