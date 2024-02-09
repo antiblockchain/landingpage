@@ -19,25 +19,22 @@ export function Blog () {
     }, []);
 
     return (
-    <motion.div
-  initial={{width: 0}}
-  animate={{width: "100%"}}
-  exit={{opacity: 0, transition: { duration: 0.2 } }}>
+<>
     <Container className="blog-container">
         <Title>blog.</Title>
         <Subtitle>a look at the process of some of the projects I've done.</Subtitle>
     </Container>
     <Container className="blog-posts-container">
         <ul>
-            
-    {blogs.map((blog) => {
+    {blogs?.map((blog) => {
         return <li key={blog._id}><Link to={"/blog/" + blog._id}>{blog.title}</Link></li>
     })}
     
     </ul>
     
     </Container>
-    </ motion.div>
+    </>
+   
     )
 }
 //<BlogPost key={blog._id} title={blog.title} content={blog.description}></BlogPost>
