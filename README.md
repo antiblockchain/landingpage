@@ -1,1 +1,1 @@
-This is the code for my homepage. There isn't much to document, but you can also find the blogapi repo on my profile to see the rest.
+This is the source code for [my portfolio.](https://elynch.co) Written in React and built with vite. It works together with my [blog api](https://github.com/unexpectedlyalarming/home-blog-api) to serve as a collection and portal of my projects. Running and building is self explanatory, just run npm run dev or npm run build to build it.
