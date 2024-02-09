@@ -219,6 +219,16 @@ nav {
     padding-right: 1rem;
     border-radius: 8px;
     max-width: 700px;
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
+    font-size: 1rem;
+
+    color: #ffffff;
+    opacity: 87%;
+    max-width: 680px;
+    overflow-x: hidden;
+    white-space: break-spaces;
+    word-wrap: break-word;
 
 }
 
@@ -231,20 +241,28 @@ nav {
     text-align: left;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .content-card {
         padding: 0;
         transition: .3s;
+        width: 100%;
+        max-width: 100%;
     }
 
     .content-card p {
         padding: 1rem;
         transition: .3s;
+        word-break: normal;
+        overflow-wrap: anywhere;
     }
 
     .title-card {
-        padding: 0;
+        padding: 1rem;
         transition: .3s;
+        word-break: break-all;
+    }
+    .title-card h1 {
+        font-size: 2rem;
     }
 }
 
@@ -342,16 +360,11 @@ i {
     }
 }
 
-.blog-text {
-    font-family: 'Space Mono', monospace;
-    font-size: 2rem;
-    font-size: 1rem;
-    padding: none;
-    color: #ffffff;
-    opacity: 87%;
-    max-width: 100%;
-    overflow-x: hidden;
-    white-space: break-spaces;
-    word-wrap: break-word;
-
+.blog-posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+

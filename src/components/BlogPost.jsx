@@ -50,15 +50,11 @@ There was some bugs throughout this whole process, like mongodb erasing my datab
 `
 
     return (
-        <motion.div
-  initial={{opacity: 0}}
-  animate={{opacity: 1}}
-  exit={{opacity: 0, transition: { duration: 0.2 } }}>
+
         <div className="blogpost-container">
             <div className="title-card"><BlogTitle>{blog?.title}</BlogTitle></div>
-            <div className="content-card"><Markdown components={components} className="blog-text">{blog?.description}</Markdown></div>
+<Markdown components={components} className="content-card">{blog?.description}</Markdown>
 
         </div>
-        </motion.div>
     )
 }
